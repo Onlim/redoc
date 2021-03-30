@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './SelectApiPage.css';
 import Logo from '../logo.png';
-import AppFooter from '../AppFooter/AppFooter';
 import SelectApi from '../SelectApi/SelectApi';
 
 class SelectApiPage extends Component {
@@ -22,7 +21,6 @@ class SelectApiPage extends Component {
             />
           </div>
         </div>
-        <AppFooter/>
       </div>
     );
   }
