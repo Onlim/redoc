@@ -1,5 +1,5 @@
 # Stage 1
-FROM node:15.8.0-alpine as react-build
+FROM node:15.11.0-alpine as react-build
 WORKDIR /app
 COPY ./app/ .
 RUN npm install
@@ -11,6 +11,7 @@ LABEL name "redoc"
 LABEL maintainer "volbrene"
 
 ENV URLS="[{url: 'https://petstore.swagger.io/v2/swagger.json', name: 'Petshop'},{url: 'https://api.apis.guru/v2/specs/instagram.com/1.0.0/swagger.yaml', name: 'Instagram'}]"
+ENV BASE_NAME=""
 ENV THEME_COLOR="#32329f"
 ENV PAGE_TITLE="Redoc"
 

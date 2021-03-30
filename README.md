@@ -2,9 +2,11 @@
 
 This docker image support redoc >2.0 with multi select apis.
 
-Demo: [Link to demo](https://demo.redoc.volbrene.de)
-
 Dockerhub: [Link to Dockerhub](https://hub.docker.com/r/volbrene/redoc)
+
+# Demo
+
+![](demo.gif)
 
 # How to use with external urls?
 
@@ -33,11 +35,12 @@ That's it.
 
 This image uses environment variables for configuration.
 
-| Available variables | Default value                                                                                                                                   | Description              |
-| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
-| `URLS`              | [{url: 'https://petstore.swagger.io/v2/swagger.json', name: 'Petshop'},{url: 'https://petstore.swagger.io/v2/swagger.json', name: 'Petshop 2'}] | List of api swagger docs |
-| `THEME_COLOR`       | #32329f                                                                                                                                         | Primary Color            |
-| `PAGE_TITLE`        | Redoc                                                                                                                                           | Page Title of docs       |
+| Available variables | Default value                                                                                                                                   | Description                                                                                      |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| `URLS`              | [{url: 'https://petstore.swagger.io/v2/swagger.json', name: 'Petshop'},{url: 'https://petstore.swagger.io/v2/swagger.json', name: 'Petshop 2'}] | List of api swagger docs                                                                         |
+| `THEME_COLOR`       | #32329f                                                                                                                                         | Primary Color                                                                                    |
+| `PAGE_TITLE`        | Redoc                                                                                                                                           | Page Title of docs                                                                               |
+| `BASE_NAME`         | '' -> (no prefix)                                                                                                                               | `basename` prop for the top-level [BrowserRouter](https://reactrouter.com/web/api/BrowserRouter) |
 
 ## You prefer swagger ui?
 
