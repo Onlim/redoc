@@ -14,6 +14,7 @@ ENV URLS="[{url: 'https://petstore.swagger.io/v2/swagger.json', name: 'Petshop'}
 ENV BASE_NAME=""
 ENV THEME_COLOR="#32329f"
 ENV PAGE_TITLE="Redoc"
+ENV SERVER_ENV=""
 
 WORKDIR /var/www/html
 

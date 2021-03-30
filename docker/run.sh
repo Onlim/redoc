@@ -19,6 +19,10 @@ if [ -n "${BASE_NAME}" ]; then
  echo "BASE_NAME: '${BASE_NAME}'," >> /var/www/html/config.js
 fi
 
+if [ -n "${SERVER_ENV}" ]; then
+ echo "SERVER_ENV: '${SERVER_ENV}'," >> /var/www/html/config.js
+fi
+
 echo "}" >> /var/www/html/config.js
 
 sed -i -e "s@%PAGE_TITLE%@$PAGE_TITLE@g" /var/www/html/index.html
