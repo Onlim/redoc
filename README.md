@@ -41,6 +41,7 @@ This image uses environment variables for configuration.
 | `THEME_COLOR`       | #32329f                                                                                                                                         | Primary Color                                                                                    |
 | `PAGE_TITLE`        | Redoc                                                                                                                                           | Page Title of docs                                                                               |
 | `BASE_NAME`         | '' -> (no prefix)                                                                                                                               | `basename` prop for the top-level [BrowserRouter](https://reactrouter.com/web/api/BrowserRouter) |
+| `SERVER_ENV` | '' | restrict openapi server urls with a prefix, e.g. https://.*
 
 ## You prefer swagger ui?
 
